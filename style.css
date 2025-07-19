@@ -72,24 +72,25 @@ position: absolute;
         width: 94vw;
         min-width: unset;
         max-width: 99vw;
-        min-height: 68vh;
+        min-height: 40vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         box-sizing: border-box;
     }
+
     h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin-top: 10px;
         margin-bottom: 10px;
     }
     p {
-        font-size: 1rem;
+        font-size: 1.1rem;
         padding: 0 2vw;
     }
     .star-logo {
-        width: 24px;
+        width: 35px;
         margin-bottom: 2px;
     }
     .separator {
@@ -102,9 +103,9 @@ position: absolute;
         margin-top: 18px;
     }
     .roundbread {
-        width: 70px;
-        height: 70px;
-        top: -24px;
-        right: -16px;
+   width: 110px;
+        height: 110px;
+        top: -22px;
+        right: 0px;
     }
 }
