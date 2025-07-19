@@ -1,0 +1,110 @@
+body {
+    background-color: #DF3618;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container {
+    background: #F9E7D3;
+    padding: 40px 60px;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    font-family: 'thermal-variable', sans-serif;
+    font-size: 2.5rem;
+    color: #DF3618;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+}
+
+p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem;
+    color: #DF3618;
+}
+
+.star-logo {
+    display: block;
+    margin: 0 auto 4px auto;
+    width: 38px;
+    height: auto;
+}
+
+.separator {
+    border: none;
+    border-top: 2px solid #DF3618;
+    width: 550px;
+    margin: 28px auto 18px auto;
+}
+
+.roundbread {
+position: absolute;
+    top: -40px;
+    right: -35px;
+    width: 170px;
+    height: 170px;
+    z-index: 11;
+    animation: playful-move 3.5s ease-in-out infinite alternate;
+}
+
+@keyframes playful-move {
+    0% { transform: translateX(0) rotate(-6deg); }
+    20% { transform: translateX(10px) rotate(2deg); }
+    40% { transform: translateX(-8px) rotate(-8deg); }
+    60% { transform: translateX(12px) rotate(4deg); }
+    80% { transform: translateX(-6px) rotate(-4deg); }
+    100% { transform: translateX(0) rotate(-6deg); }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 18px 8px;
+        border-radius: 18px;
+        width: 94vw;
+        min-width: unset;
+        max-width: 99vw;
+        min-height: 68vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 1rem;
+        padding: 0 2vw;
+    }
+    .star-logo {
+        width: 24px;
+        margin-bottom: 2px;
+    }
+    .separator {
+        width: 80vw;
+        min-width: 120px;
+        margin: 18px auto 10px auto;
+    }
+    .limkraf-logo {
+        width: 70px;
+        margin-top: 18px;
+    }
+    .roundbread {
+        width: 70px;
+        height: 70px;
+        top: -24px;
+        right: -16px;
+    }
+}
